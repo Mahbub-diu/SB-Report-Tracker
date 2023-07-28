@@ -6,6 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background: #fff;
 }
 img {
   max-width: 100%;
@@ -97,7 +98,52 @@ a {
     }
   }
 }
+// login page end here
 
+// navbar start from here
+
+.main-navbar {
+  margin-bottom: 24px;
+  .navbar {
+    background-color: $blue-bg;
+    padding-left: 24px;
+    padding-right: 24px;
+    .navbar-brand {
+      text-transform: capitalize;
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .nav-item {
+      .nav-link {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .dropdown-menu[data-bs-popper] {
+        right: 0;
+        left: unset;
+        @include no-radius;
+      }
+      .dropdown-menu {
+        .dropdown-item {
+          text-transform: capitalize;
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// navbar end here
+
+// dashboard page start from here
+.dashboard-main {
+  @include common-map-bg;
+}
+// dashboard page start from here
 .footer-main {
   background: #000000;
   padding: 20px 0;
