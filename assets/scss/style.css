@@ -18,6 +18,27 @@
   color: #fff;
 }
 
+.enroll-btn {
+  min-width: 180px;
+  padding: 9px 0;
+  background: #5570f1;
+  color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  text-transform: uppercase;
+  margin: 0px auto;
+}
+.enroll-btn:hover {
+  background: #5570f1;
+  color: #fff;
+}
+.enroll-btn i {
+  margin-right: 5px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
@@ -166,7 +187,7 @@ a {
 
 .dashboard-main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(/assets/images/login.png);
   background-size: cover;
   background-position: center center;
@@ -174,12 +195,193 @@ a {
   position: relative;
   background-color: #f4f5fa;
 }
+.dashboard-main .title-box {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.dashboard-main .title-box .logo-box {
+  width: 136px;
+  height: 136px;
+  background: #f4f5fa;
+  border: 1px solid #e1e2e9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0px auto;
+  width: 71px;
+  height: 71px;
+}
+.dashboard-main .title-box .title {
+  margin-top: 20px;
+  text-align: center;
+}
+.dashboard-main .title-box .title h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: capitalize;
+}
+.dashboard-main .tracker-box {
+  min-height: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.dashboard-main .tracker-box .logo-box {
+  width: 136px;
+  height: 136px;
+  background: #f4f5fa;
+  border: 1px solid #e1e2e9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0px auto;
+  width: 140px;
+  height: 140px;
+}
+.dashboard-main .tracker-box .title {
+  text-align: center;
+  margin: 30px 0;
+}
+.dashboard-main .tracker-box .title h3 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.dashboard-main .summary-list-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.dashboard-main .summary-list-box .title-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dashboard-main .summary-list-box .title-flex .title-box {
+  flex-basis: 60%;
+  margin-bottom: 0;
+  padding: 0;
+}
+.dashboard-main .summary-list-box .title-flex .title-box h3 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.dashboard-main .summary-list-box .title-flex .date-box {
+  flex-basis: 40%;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.dashboard-main .summary-list-box .table thead th {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #2c2d33;
+  font-weight: 600;
+}
+.dashboard-main .summary-list-box .table tbody td {
+  vertical-align: middle;
+  font-size: 14px;
+  color: #6e7079;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dashboard-main .summary-list-box .table tbody td button.approve-btn {
+  width: 139px;
+  background: #5570f1;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.dashboard-main .summary-list-box .table tbody td .objection-btn {
+  width: 139px;
+  background: #ce004a;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.dashboard-main .summary-list-box .pagination li.page-item {
+  margin: 0 5px;
+}
+.dashboard-main .summary-list-box .pagination li.page-item a.page-link {
+  font-size: 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.dashboard-main .summary-list-box .pagination li.page-item a.page-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+.dashboard-main .sender-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.dashboard-main .sender-box .logo-box {
+  width: 136px;
+  height: 136px;
+  background: #f4f5fa;
+  border: 1px solid #e1e2e9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0px auto;
+  width: 108px;
+  height: 108px;
+}
+.dashboard-main .sender-box .enroll-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px 0;
+  text-transform: capitalize;
+}
+.dashboard-main .sender-box .enroll-btn.negetive {
+  background: #ce004a;
+}
 
 .footer-main {
   background: #000000;
   padding: 20px 0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 .footer-main p {

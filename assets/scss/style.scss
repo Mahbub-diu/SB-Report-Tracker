@@ -142,13 +142,180 @@ a {
 // dashboard page start from here
 .dashboard-main {
   @include common-map-bg;
+  .title-box {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    .logo-box {
+      @include logo-box-round;
+      width: 71px;
+      height: 71px;
+    }
+    .title {
+      margin-top: 20px;
+      text-align: center;
+      h3 {
+        color: $title-color;
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .tracker-box {
+    min-height: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+    .logo-box {
+      @include logo-box-round;
+      width: 140px;
+      height: 140px;
+    }
+    .title {
+      text-align: center;
+      margin: 30px 0;
+      h3 {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+  }
+  .summary-list-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+    .title-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .title-box {
+        flex-basis: 60%;
+        margin-bottom: 0;
+        padding: 0;
+        h3 {
+          margin-bottom: 0;
+          text-transform: capitalize;
+          line-height: normal;
+          font-size: 16px;
+          font-weight: 600;
+          color: $title-color;
+        }
+      }
+      .date-box {
+        flex-basis: 40%;
+        font-size: 12px;
+        text-transform: capitalize;
+        font-weight: normal;
+      }
+    }
+    .table {
+      thead {
+        th {
+          text-transform: capitalize;
+          font-size: 14px;
+          color: #2c2d33;
+          font-weight: 600;
+        }
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          font-size: 14px;
+          color: #6e7079;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          button.approve-btn {
+            width: 139px;
+            background: $blue-bg;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            text-transform: capitalize;
+            font-size: 14px;
+          }
+          .objection-btn {
+            width: 139px;
+            background: $red;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            text-transform: capitalize;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .pagination {
+      li.page-item {
+        margin: 0 5px;
+        a.page-link {
+          font-size: 12px;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .sender-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+    .logo-box {
+      @include logo-box-round;
+      width: 108px;
+      height: 108px;
+    }
+    .enroll-btn {
+      // font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 30px 0;
+      text-transform: capitalize;
+    }
+    .enroll-btn.negetive {
+      background: $red;
+    }
+  }
 }
 // dashboard page start from here
+
 .footer-main {
   background: #000000;
   padding: 20px 0;
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
   width: 100%;
   p {
     margin: 0;

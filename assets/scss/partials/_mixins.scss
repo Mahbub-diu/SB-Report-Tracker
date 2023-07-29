@@ -35,7 +35,7 @@
 
 @mixin common-map-bg {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(/assets/images/login.png);
   background-size: cover;
   background-position: center center;

@@ -18,3 +18,24 @@
     color: #fff;
   }
 }
+
+.enroll-btn {
+  min-width: 180px;
+  padding: 9px 0;
+  background: $blue-bg;
+  color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  text-transform: uppercase;
+  margin: 0px auto;
+  &:hover {
+    background: $blue-bg;
+    color: #fff;
+  }
+  i {
+    margin-right: 5px;
+  }
+}
